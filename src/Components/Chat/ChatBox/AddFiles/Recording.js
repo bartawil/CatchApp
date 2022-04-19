@@ -31,7 +31,6 @@ function Recording({handleRecording}) {
         } catch (err) {
         }
 
-        const track = mediaRecorder.stream.getTracks()[0];
 
         mediaRecorder.onstart = function () {
           setRecording({
