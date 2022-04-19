@@ -1,8 +1,9 @@
 import React from 'react'; 
 import './Home.css';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import SignIn from './Sign/SignIn';
 import SignUp from './Sign/SignUp';
+import Chat from './Chat/Chat';
 
 function Home() {
 
@@ -12,13 +13,22 @@ function Home() {
         setChatFlag(q);
     }
 
+    const [idx, setIdx] = useState(0);
+
+    function isLogin(i) {
+        setIdx(i);
+    }
+
+    useEffect(() => {
+       // console.log(idx);
+    });
+
 
     return (
         <div>
             <React.Fragment>
                 {chatFlag ? (
-                    <></>
-                    // <Chat userIdx={idx}/>
+                    <Chat userIdx={idx}/>
                 ) : (
                     <div className="login-wrap">
                         {/* Bootstrap CSS */}
@@ -28,7 +38,7 @@ function Home() {
                         <input id="tab-1" type="radio" name="tab" className="sign-in" defaultChecked /><label htmlFor="tab-1" className="tab">Sign In</label>
                         <input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab">Sign Up</label>
                         <div className="login-form">
-                            <SignIn pageFlag={pageFlag}/>
+                            <SignIn pageFlag={pageFlag} isLogin={isLogin}/>
                             <SignUp pageFlag={pageFlag}/>
                         </div>
                         </div>

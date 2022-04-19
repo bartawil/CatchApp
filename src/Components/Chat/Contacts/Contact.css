@@ -1,0 +1,32 @@
+
+  .friend-drawer {
+    padding: 10px 15px;
+    display: flex;
+    vertical-align: baseline;
+    transition: .3s ease;
+  }
+  
+  .text {
+    margin-left: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .text-muted {
+    margin: 0;
+  }
+  
+  .time {
+    color: gray;
+    margin-left: auto;
+  }
+  
+  .friend-drawer--onhover:hover {
+    background: #fafafa;
+    cursor: pointer;
+  }
+  
+  .hr-friend-drawer {
+    margin: 5px auto;
+    width: 95%;
+    color: #e3e3e3;
+  }

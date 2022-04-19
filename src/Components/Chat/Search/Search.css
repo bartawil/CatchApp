@@ -1,0 +1,36 @@
+
+.search-box {
+    background: rgba(214, 247, 205, 0.014);
+    padding: 10px 13px;
+
+  }
+  
+  .input-wrapper {
+      border-radius: 40px;
+      background-color: rgba(197, 183, 115, 0.612);
+  }
+  
+  .bi-search {
+    color: gray;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    border: none;
+    border-radius: 40px;
+    width: 80%;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(135, 112, 112, 0);
+  }
+
+  .search-box input {
+    color: white;
+  }
+  
+  .search-bar::placeholder {
+    color: #f7eeee;
+    font-weight: 300;
+  }

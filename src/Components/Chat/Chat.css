@@ -1,0 +1,45 @@
+body {
+    background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+  }
+  
+  .container {
+    margin: 60px auto;
+    background: rgba(214, 247, 205, 0.422);
+    padding: 0;
+    height: 455px;
+  }
+
+  .row{
+    --bs-gutter-x:0;
+  }
+
+  .settings-tray {
+    background: rgba(237, 249, 227, 0.612);
+    padding: 10px 15px;
+  
+  }
+
+  .profile-image {
+    width:50px;
+    height: 50px;
+    border-radius: 40px;
+  }
+
+  .settings-tray--right{
+    float: right;
+    cursor: pointer;
+    padding: 5px 0px;
+  }
+
+  .profile-name {
+    margin-left: 15px;
+    display: inline;
+  }
+
+
+  /* //// */
+  

@@ -1,0 +1,48 @@
+.add-contact {
+    border: none;
+    background: rgba(237, 249, 227, 0.087);
+}
+
+.bi-person-plus-fill {
+    font-size: 25px;
+    color: lightgray;
+    margin-left: 14px;
+    transition: .3s;
+}
+
+.bi::before{
+    color: white;
+}
+
+.close{
+    background: none;
+    border: none;
+    font-size: 30px;
+    
+}
+
+.modal-header {
+    padding: 5px 20px;
+}
+
+.modal-body {
+    padding-bottom: 0;
+}
+
+.modal-footer{
+    border-top: none;
+    padding-top: 0px;
+}
+
+#add-contact-error {
+    color: #cc0033;
+    font-size: 12px;
+    margin: 20px;
+    text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    margin: auto;
+}
