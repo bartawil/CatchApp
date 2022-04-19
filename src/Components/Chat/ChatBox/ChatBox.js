@@ -75,7 +75,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
             return;
         }
         var dateTime = new Date();
-        var datePart = `${dateTime.toLocaleDateString('en-GB', {month: "short", day: "numeric", year: "numeric"})}`;
+        var datePart = `${dateTime.toLocaleDateString('en-GB', {month: "short", day: "numeric"})}`;
         var hourPart = new Date();
         hourPart = hourPart.toLocaleString('en-GB', { hour: "numeric", minute:"numeric"});
         var time = datePart.concat(", ").concat(hourPart);
