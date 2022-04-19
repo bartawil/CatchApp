@@ -4,7 +4,7 @@ import AddContact from "./AddContact/AddContact";
 import ContactsList from "./Contacts/ContactsList";
 import { useState } from "react";
 import Search from "./Search/Search";
-// import ChatBox from "./ChatBox/ChatBox";
+import ChatBox from "./ChatBox/ChatBox";
 
 function Chat({userIdx}) {
   
@@ -40,7 +40,7 @@ function Chat({userIdx}) {
 
           {/* First Row!! */}
           <div className='settings-tray'>
-            <img className='profile-image' src={dataBase.at(userIdx).img}></img>
+            <img className='profile-image' alt='profile' src={dataBase.at(userIdx).img}></img>
             <span className="profile-name">
               {dataBase.at(userIdx).displayName}
             </span>
@@ -54,9 +54,9 @@ function Chat({userIdx}) {
           <ContactsList newUserDB={newUserList} openChat={openChat}/>
         </div>
 
-        {/* <div className='col-10 col-sm-9 col-md-8'>
+         <div className='col-10 col-sm-9 col-md-8'>
           <ChatBox contactID={contactID} userIdx={userIdx} openChat={openChat} updateUserList={updateUserList}/>
-        </div> */}
+        </div>
       </div>
     </div>
   );

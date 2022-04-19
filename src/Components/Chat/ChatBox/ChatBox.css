@@ -1,0 +1,118 @@
+.chat-panel {
+    height: 306px;
+  }
+  
+  .chat-bubble {
+    padding: 10px 14px;
+    background: rgb(227, 238, 240);
+    margin: 10px 30px;
+    border-radius: 9px;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+    word-break:break-word;
+    width: 150%;
+    
+  }
+  
+  .chat-bubble--blue {
+    background: rgb(245, 238, 238);
+  }
+  
+  .chat-bubble:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 0;
+    margin-top: -10px;
+  }
+  .chat-bubble--left:after {
+    left: 0;
+    border-right-color: rgb(227, 238, 240);
+    border-left: 0;
+    margin-left: -19px;
+  }
+  .chat-bubble--right:after {
+    right: 0;
+    border-left-color: rgb(245, 238, 238);
+    border-right: 0;
+    margin-right: -19px;
+  }
+  
+  .chat-box-tray {
+    background: rgba(214, 247, 205, 0.014);
+    display: flex;
+    align-items: baseline;
+    padding: 10px 15px;
+    align-items: center;
+    bottom: 0px;
+  }
+  
+  .dropup
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  .chat-box-tray input {
+    margin: 0 10px;
+    padding: 6px 22px;
+    color: white;
+  }
+  .chat-box-tray i {
+    color: grey;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  .chat-box-tray i:last-of-type {
+    margin-left: 0;
+  }
+  
+  .send-bar {
+    margin: 0 100px;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 40px;
+    width: 80%;
+    height: 50px;
+    outline: none;
+    background-color: rgba(135, 112, 112, 0.612);
+  }
+  
+  .btn-secondary {
+      background-color: #232b30;
+  }
+  
+  #upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  #iconCamera {
+    padding-left: 20px;
+  }
+  
+  #upload-video {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  #iconReel {
+    padding-left: 20px;
+  }
+  
+  i{
+    cursor: pointer;
+  }
+  
+  .time-info{
+    margin-left: 0%;
+    font-size: smaller;
+    word-break:break-word;
+    text-align: right;
+   
+  }
+  

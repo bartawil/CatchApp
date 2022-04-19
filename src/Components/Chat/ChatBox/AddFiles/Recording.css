@@ -1,0 +1,23 @@
+.record-btn {
+    background-color: #232b30;
+}
+
+.audio-container{
+    padding: 10px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.audio{
+    width: 100%;
+}
+
+.modal-footer-newRecord{
+    padding: 10px;
+    align-items: center;
+}
+
+.btn-newRecord{
+    width: 50%;
+}

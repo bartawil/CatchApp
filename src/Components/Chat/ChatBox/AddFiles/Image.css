@@ -1,0 +1,24 @@
+.image-container{
+    padding: 90px;
+    padding-bottom: 0;
+    padding-top: 15px;
+}
+
+.img{
+    width: 100%;
+}
+
+
+.upload-pic input {
+    display: none;
+}
+
+.upload-pic .-label {
+    cursor: pointer;
+    align-items: center;
+    z-index: 10000;
+    color:black;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 100px;
+    margin-bottom: 0;
+}

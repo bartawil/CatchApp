@@ -12,7 +12,7 @@ function Contact({displayName, img, userName, chat, openChat}) {
         {chat.length !== 0 ? (
           <div>
           <div className='friend-drawer friend-drawer--onhover' onClick={openChatHalper}>
-            <img className='profile-image' alt="Friend photo" src={img}></img>
+            <img className='profile-image' alt="Friend" src={img}></img>
             <div className='text d-none d-sm-block'>
               <h6 >{displayName}</h6>
               <p className='text-muted d-none d-md-block' >{ (chat.at(0).type === "text") ? chat.at(0).what : chat.at(0).type}</p>
@@ -24,7 +24,7 @@ function Contact({displayName, img, userName, chat, openChat}) {
         ) : (
           <div>
           <div className='friend-drawer friend-drawer--onhover' onClick={openChatHalper}>
-            <img className='profile-image' alt="Friend photo" src={img}></img>
+            <img className='profile-image' alt="Friend" src={img}></img>
             <div className='text d-none d-sm-block'>
               <h6 className=" d-none d-md-block">{displayName}</h6>
             </div>
