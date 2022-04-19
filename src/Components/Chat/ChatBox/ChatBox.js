@@ -2,7 +2,7 @@ import {useState} from 'react';
 import "./ChatBox.css"
 import dataBase from "../../DataBase/dataBase";
 import React from 'react'; 
-// import MessageList from "../Messages/MessageList";
+import MessageList from "../Messages/MessageList";
 import AddFiles from "./AddFiles/AddFiles";
 
 function ChatBox({contactID, userIdx, updateUserList}) {
@@ -10,12 +10,12 @@ function ChatBox({contactID, userIdx, updateUserList}) {
     const index = dataBase.at(userIdx).contactsList.findIndex((user) => user.userName === contactID);
 
     function handleImg(src) {
-        if (src == ""){
+        if (src === ""){
             return;
         }
         var dateTime = new Date();
         var datePart = `${dateTime.toLocaleDateString(undefined, {month: "short", day: "numeric"})}`;
-        var hourPart = new Date;
+        var hourPart = new Date();
         console.log(datePart);
         hourPart = hourPart.toLocaleString('en-GB', { hour: "numeric", minute:"numeric"});
         var time = datePart.concat(" ").concat(hourPart);
@@ -30,12 +30,12 @@ function ChatBox({contactID, userIdx, updateUserList}) {
     }
 
     function handleVideo(src) {
-        if (src == ""){
+        if (src === ""){
             return;
         }
         var dateTime = new Date();
         var datePart = `${dateTime.toLocaleDateString(undefined, {month: "short", day: "numeric"})}`;
-        var hourPart = new Date;
+        var hourPart = new Date();
         console.log(datePart);
         hourPart = hourPart.toLocaleString('en-GB', { hour: "numeric", minute:"numeric"});
         var time = datePart.concat(" ").concat(hourPart);
@@ -112,7 +112,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
                     {/* top bar */ }
 
                     <div className='settings-tray'>
-                        <img className='profile-image' src={dataBase.at(userIdx).contactsList.at(index).img}></img>
+                        <img className='profile-image' alt="profile" src={dataBase.at(userIdx).contactsList.at(index).img}></img>
                         <div className="profile-name">
                             {dataBase.at(userIdx).contactsList.at(index).displayName}
                         </div>
@@ -121,7 +121,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
                     {/* chat */ }
 
                             <div className="chat-panel">
-                            {/*<MessageList userIdx={userIdx} contactIdx={index}/>*/}
+                            <MessageList userIdx={userIdx} contactIdx={index}/>
 
                             </div>
 

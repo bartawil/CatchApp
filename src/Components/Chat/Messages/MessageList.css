@@ -1,0 +1,21 @@
+.messages-menu{
+    height: 306px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex; 
+    flex-direction: column-reverse;
+    padding-right: 17%;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .messages-menu::-webkit-scrollbar-track {
+  background: transparent !important;
+  }
+  
+  .messages-menu::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border-radius: 4px;
+  }

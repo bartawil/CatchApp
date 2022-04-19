@@ -69,13 +69,3 @@ function Image({attachOn, handleImg}) {
 }
 
 export default Image;
-
-    {/*   <div>
-            <label for="upload-photo">
-                <i className="bi bi-card-image" id='iconCamera'>
-                    &nbsp;&nbsp;Send Picture
-                </i>
-            </label>
-            <input id="upload-photo" type="file" onChange={addPhoto} />
-            <img src={file} id="output" width="200" />
-    </div> */}
