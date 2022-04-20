@@ -9,6 +9,12 @@ function ChatBox({contactID, userIdx, updateUserList}) {
 
     const index = dataBase.at(userIdx).contactsList.findIndex((user) => user.userName === contactID);
 
+    function arraymove(arr, fromIndex, toIndex) {
+        var element = arr[fromIndex];
+        arr.splice(fromIndex, 1);
+        arr.splice(toIndex, 0, element);
+    }
+    
     function handleImg(src) {
         if (src === ""){
             return;
@@ -25,6 +31,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
             when: time,
             type: "img"
         })
+        arraymove(dataBase.at(userIdx).contactsList, index, 0);
         updateUserList(dataBase.at(userIdx).contactsList);
     }
 
@@ -44,6 +51,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
             when: time,
             type: "video"
         })
+        arraymove(dataBase.at(userIdx).contactsList, index, 0);
         updateUserList(dataBase.at(userIdx).contactsList);
     }
     function handleRecording(src) {
@@ -62,6 +70,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
             when: time,
             type: "recording"
         })
+        arraymove(dataBase.at(userIdx).contactsList, index, 0);
         updateUserList(dataBase.at(userIdx).contactsList);
     }
 
@@ -70,6 +79,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
     const handleUserInput = (e) => {
         setInputValue(e.target.value);
     };
+
     const sendMessage = () => {
         if (inputValue == ""){
             return;
@@ -88,6 +98,7 @@ function ChatBox({contactID, userIdx, updateUserList}) {
             type: "text"
         })
         setInputValue("");
+        arraymove(dataBase.at(userIdx).contactsList, index, 0);
         updateUserList(dataBase.at(userIdx).contactsList);
     };
     function pressEnter(e) {
