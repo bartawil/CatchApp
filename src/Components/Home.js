@@ -27,7 +27,7 @@ function Home() {
     return (
         <div>
             <React.Fragment>
-                {!chatFlag ? (
+                {chatFlag ? (
                     <Chat userIdx={idx}/>
                 ) : (
                     <div className="login-wrap">

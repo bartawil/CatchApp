@@ -84,7 +84,7 @@ const dataBase = [
                         from: "Michael Jordan",
                         to: "Phil Jackson",
                         what: pic,
-                        when: "9 Mar 12:23",
+                        when: "9 Mar 12:34",
                         type: "img"
                     },
                     {
@@ -140,7 +140,7 @@ const dataBase = [
                         from: "Michael Jordan",
                         to: "Larry Bird",
                         what: record,
-                        when: "2 Jan 18:25",
+                        when: "2 Jan 10:15",
                         type: "recording"
                     },
                     {
