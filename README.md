@@ -34,7 +34,7 @@ The existing users are:
 - Username: Larry Bird, Password: LB123456
 - Username: Phil Jackson, Password: PJ123456
 
-We recommend login to the Michael Jordan account.
+At the Michael Jordan account, you can find chats with all the requested types of messages in the assignment (picture, video and recording).
 
 After successful login, the chat page will appear to the user. At the left side, the user will see his contacts. By pressing the person with the plus icon, the user may add new contacts. Pressing a contact will make the chat appear in the right side of the page. At the right side of the page, at the bottom bar, appears the different types of messages the user can send.
 At this moment, CatchApp allows sending messages of several types:
