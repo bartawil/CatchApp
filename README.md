@@ -21,9 +21,15 @@ The packages we used to create the app are: react, react-router-dom, react-dom/c
 ## CatchApp usage
 The home page of the app is the Sign-in page. If you are an existing user, you just need to type your username and your password to log in. If you are a new user, you will need to go to the Sign-Up page and enter your details in order to create a new account.
 
-![Sign-in page](src\signin.png?raw=true "Sign-in page")
-![Sign-up page](src\signup.png?raw=true "Sign-Up page")
+<p>
+  <img src="src/signin.png">
+</p>
 
+<p>
+  <img src="src/signup.png" width="712">
+</p>
+
+                                   
 The existing users are:
 - Username: Michael Jordan, Password: MJ123456
 - Username: Scotty Pippen, Password: SP123456
@@ -46,7 +52,9 @@ At this moment, CatchApp allows sending messages of several types:
 
 To send a regular message, just enter your text in the input field and press enter or press the right plane icon. If you will press the clip icon, two different icons will appear: pressing the image icon will allow to choose an image type file and send it. pressing the video icon will allow to choose a video type file and send it. Pressing the mic icon will allow to record from the device and send the recording. 
 
-![Chat page](src\chat.png?raw=true "Chat page")
+<p>
+  <img src="src/chat.png">
+</p>
 
 ## Collaborators
 Developed by Bar Tawil and Anastasia Khizgiyaev.
