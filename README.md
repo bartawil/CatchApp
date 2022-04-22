@@ -47,5 +47,8 @@ To send a regular message, just enter your text in the input field and press ent
 
 ![Chat page](src\chat.png?raw=true "Chat page")
 
+## Collaborators
+Developed by Bar Tawil and Anastasia Khizgiyaev.
+
 
 
