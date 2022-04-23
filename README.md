@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# CatchApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that allows two people to chat with each other using the internet. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-## Available Scripts
+## instillation
 
-In the project directory, you can run:
+To run the app, you need to install npm. In your project directory run:
+
+### `npm install`
+
+after the installation, in your project directory, you need to run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+This will run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The packages we used to create the app are: 'react-bootstrap', 'react-router-dom'.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## CatchApp usage
+The home page of the app is the Sign-in page. If you are an existing user, you just need to type your username and your password to log in. If you are a new user, you will need to go to the Sign-Up page and enter your details in order to create a new account.
 
-### `npm run build`
+<p>
+  <img src="src/Components/DataBase/SignInPNG.PNG" width="813">
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>
+  <img src="src/Components/DataBase/SignUpPNG.PNG" width="813">
+</p>
+                                 
+The existing users are:
+- Username: Michael Jordan, Password: MJ123456
+- Username: Scotty Pippen, Password: SP123456
+- Username: Dennis Rodman, Password: DR123456
+- Username: Jerry Krause, Password: JK123456
+- Username: John Paxson, Password: JP123456
+- Username: Earvin Johnson, Password: EJ123456
+- Username: Larry Bird, Password: LB123456
+- Username: Phil Jackson, Password: PJ123456
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+At the Michael Jordan account, you can find chats with all the requested types of messages in the assignment (picture, video and recording).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After successful login, the chat page will appear to the user. At the left side, the user will see his contacts. By pressing the person with the plus icon, the user may add new contacts. Pressing a contact will make the chat appear in the right side of the page. At the right side of the page, at the bottom bar, appears the different types of messages the user can send.
+At this moment, CatchApp allows sending messages of several types:
 
-### `npm run eject`
+* Regular text message
+* Picture
+* Video
+* Audio recording from the device
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To send a regular message, just enter your text in the input field and press enter or press the right plane icon. If you will press the clip icon, two different icons will appear: pressing the image icon will allow to choose an image type file and send it. pressing the video icon will allow to choose a video type file and send it. Pressing the mic icon will allow to record from the device and send the recording. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>
+  <img src="src/Components/DataBase/Chat.PNG" width="813">
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Collaborators
+Developed by Bar Tawil and Anastasia Khizgiyaev.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
