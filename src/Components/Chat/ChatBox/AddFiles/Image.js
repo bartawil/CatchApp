@@ -26,7 +26,7 @@ function Image({attachOn, handleImg}) {
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLabelImg">Upload image</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={attachOn}>
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
@@ -55,15 +55,6 @@ function Image({attachOn, handleImg}) {
           </div>
         </div>
       </>
-      //   <div>
-      //   <label for="upload-photo">
-      //     <i className="bi bi-card-image" id='iconCamera'>
-      //       &nbsp;&nbsp;Send Picture
-      //     </i>
-      //   </label>
-      //   <input type="file" name="photo" id="upload-photo" onChange={addPhoto} />
-      //   <img src={file} id="output" width="250" />
-      // </div>
 
     );
 }
